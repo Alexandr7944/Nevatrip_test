@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 16px;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6f6f6;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 15px rgba(209, 217, 230, 1),
+                -10px -10px 15px rgba(255, 255, 255, 1);
+}
+
+select,
+input,
+button,
+.out {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid rgb(236, 233, 233);
+    margin-bottom: 25px;
+}
+
+select:focus,
+input:focus,
+button:focus,
+.out:focus {
+    outline: 2px solid rgb(199, 195, 195);
+}
+button {
+    box-shadow: 8px 8px 12px rgba(209, 217, 230, 1),
+                -8px -8px 12px rgba(255, 255, 255, 1),
+                inset 0 0 12px rgba(209, 217, 230, 1),
+                inset 0 0  12px rgba(255, 255, 255, 1);
+    transition: .2s ease-in-out;
+}
+button:active {
+    box-shadow: 0px 0px 15px rgba(209, 217, 230, 1),
+                0px 0px 15px rgba(255, 255, 255, 1),
+                inset 10px 10px 15px rgba(209, 217, 230, 1),
+                inset -10px -10px 15px rgba(255, 255, 255, 1);
+}
+.close {
+    display: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
